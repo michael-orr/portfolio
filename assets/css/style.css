@@ -192,7 +192,6 @@ footer h2 {
 }
 
 .portfolio-item {
-  flex: 1 0 400px;
   min-width: 100%;
   padding: var(--padding);
   border: var(--dark) dotted 2px;
@@ -294,6 +293,22 @@ footer h2 {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+@media screen and (max-width: 330px){
+  .portfolio-item .project {
+    height: 12vh;
+    position: absolute;
+    left: 4px;
+    bottom: 5px;
+  }
+  .portfolio-item .project .project-title {
+    font-size: 2rem;
+  }
+}
+.portfolio-item .project .project-dscription {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 @media screen and (min-width: 769px){
