@@ -26,6 +26,10 @@
     box-sizing: border-box;
 
 }
+
+body {
+  background-color: var(--light);
+}
 header {
     display:flex;
     flex-direction: column;
@@ -192,9 +196,8 @@ footer h2 {
 }
 
 .portfolio-item {
-  min-width: 100%;
+  min-width: 95%;
   padding: var(--padding);
-  border: var(--dark) dotted 2px;
   height: 15vh;
   display: flex;
   flex-direction: row;
@@ -205,10 +208,9 @@ footer h2 {
   border: var(--light-blue) 4px solid;
 }
 
-.portfolio-item:hover {
+.portfolio-item:visited {
   border: var(--faded-blue) 4px solid;
 }
-
 .portfolio-item:hover {
   border: var(--faded-green) 6px solid;
 }
@@ -266,6 +268,23 @@ footer h2 {
   background-position: left center;
 }
 
+@media screen and (max-height: 660px) and (max-width: 330px) {
+  .subtitle {
+    height: 6vh;
+    font-size: 1.75rem;
+    width: 80%;
+  }
+  .portfolio-item .project {
+    height: 12vh;
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+  }
+  .portfolio-item .project .project-title {
+    font-size: 2rem;
+    line-height: .8;
+  }
+}
 @media screen and (min-width: 481px){
   .subtitle-image {
     justify-content: flex-start;
@@ -293,22 +312,6 @@ footer h2 {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
-
-@media screen and (max-width: 330px){
-  .portfolio-item .project {
-    height: 12vh;
-    position: absolute;
-    left: 4px;
-    bottom: 5px;
-  }
-  .portfolio-item .project .project-title {
-    font-size: 2rem;
-  }
-}
-.portfolio-item .project .project-dscription {
-  font-size: 1rem;
-  line-height: 1;
 }
 
 @media screen and (min-width: 769px){
