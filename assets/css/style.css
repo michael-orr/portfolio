@@ -238,18 +238,17 @@ padding: 16px var(--padding) 16px var(--padding);
 }
 
 #portfolio-item-1 {
-/* background-image: url("https://picsum.photos/id/1047/1000"); */
-background-image: url("./assets/images/Code-quiz-screenshot.PNG);
+background-image: url("/assets/images/find-a-city-screenshot.PNG");
 background-repeat: no-repeat;
 background-size: cover;
 }
 #portfolio-item-2 {
-background-image: url("./assets/images/Code-quiz-screenshot.PNG");
+background-image: url("/assets/images/Code-quiz-screenshot.PNG");
 background-repeat: no-repeat;
 background-size: cover;
 }
 #portfolio-item-3 {
-background-image: url("./assets/images/work-day-scheulder-screenshot.png");
+background-image: url("/assets/images/work-day-scheulder-screenshot.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
