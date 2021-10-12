@@ -198,7 +198,7 @@ width: 100%;
 .portfolio-item {
 min-width: 95%;
 padding: var(--padding);
-height: 15vh;
+height: 30vh;
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
@@ -236,18 +236,20 @@ color: var(--black);
 .contact-me {
 padding: 16px var(--padding) 16px var(--padding);
 }
+
 #portfolio-item-1 {
-background-image: url("https://picsum.photos/id/1047/1000");
+/* background-image: url("https://picsum.photos/id/1047/1000"); */
+background-image: url("/assets/images/find-a-city-screenshot.PNG");
 background-repeat: no-repeat;
 background-size: cover;
 }
 #portfolio-item-2 {
-background-image: url("https://picsum.photos/id/1041/1000");
+background-image: url("/assets/images/Code-quiz-screenshot.PNG");
 background-repeat: no-repeat;
 background-size: cover;
 }
 #portfolio-item-3 {
-background-image: url("https://picsum.photos/id/1042/1000");
+background-image: url("/assets/images/work-day-scheulder-screenshot.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -274,11 +276,14 @@ background-position: left center;
   font-size: 1.75rem;
   width: 80%;
 }
+
+
 .portfolio-item .project {
   height: 12vh;
   position: absolute;
   left: 4px;
   bottom: 4px;
+  z-index: 20;
 }
 .portfolio-item .project .project-title {
   font-size: 2rem;
@@ -304,7 +309,7 @@ background-position: left center;
   flex-grow: 1;
   min-width: 98%;
   max-width: 100%;
-  height: 30vh;
+  height: 50vh;
 }
 .contact-me {
   display: flex;
